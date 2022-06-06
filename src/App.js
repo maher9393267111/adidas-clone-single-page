@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import Home from './pages/home/index';
 import {useDispatch, useSelector} from 'react-redux';
-
+import Navbar from './components/navbar';
+ 
 function App() {
 
 
@@ -15,19 +16,19 @@ function App() {
   const {message} = useSelector(state => state.global);
   console.log(message);
   return (
-    <div className="App">
-      {message}
+    <div className="">
+      
+<div>
+  <Navbar />
+</div>
+
       <BrowserRouter>
     <Routes>
       {/* <Route path="/" element={<App />}>  */}
         <Route path='/' element={<Home />} />
-        {/* <Route path="teams" element={<Teams />}>
-          <Route path=":teamId" element={<Team />} />
-          <Route path="new" element={<NewTeamForm />} />
-          <Route index element={<Leag
-          ueStandings />} /> */}
-        {/* </Route> */}
-      {/* </Route> */}
+         {/* <Route path="teams" element={<Teams />}> */}
+         
+          
     </Routes>
   </BrowserRouter>
 
