@@ -42,15 +42,73 @@ className='flex  gap-12 '
 {categories.map(cat => (
 
 
-<li className='  group  font-semibold text-[17px]'>
+<li className='    group  font-semibold text-[17px]'>
 
-<p>{cat.name}</p>
+<p
+
+className=' hover:border-b-4 hover:border-indigo-500  duration-200  transition-all '
+>{cat.name}</p>
 
 
 {/* -submenu- */}
 
-<div className='absolute w-[30vw]  right-0 min-h-[300px]   shadow-2xl  bg-slate-300 hidden  group-hover:block '>
+<div className='absolute w-[77vw] left-[-334px]  min-h-[300px]   shadow-2xl  bg-white    z-30 hidden  group-hover:block  top-10 transition-all   duration-300'>
 
+
+{/* ----content-start---- */}
+
+
+<div className=' container'>
+
+
+<div>
+
+<ul className=' mt-12 flex justify-between w-[85%] mx-auto'>
+
+
+{cat.submenu.map(sub => (
+
+<li>
+    <p>
+    {sub.name}
+    </p>
+
+
+<div>
+
+<ul>
+
+{sub.list.map(item => (<div>
+
+<li className=' text-sm'>
+    <p>{item}</p>
+</li>
+
+
+
+</div>))}
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+</li>
+))}
+
+</ul>
+
+
+</div>
+
+
+
+</div>
 
 
 
