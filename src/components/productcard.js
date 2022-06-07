@@ -5,7 +5,7 @@ import {useDispatch,useSelector} from 'react-redux';
 const Productcard = ({product}) => {
 
     const dispatch = useDispatch();
-    const  {liked} = useSelector(state => state.global);
+    const  {liked,hideicons} = useSelector(state => state.global);
 
     const [isLiked, setIsLiked] = useState(false);
 
@@ -57,13 +57,14 @@ src={product.images[currentindex]} alt="" />
 
         {/* heart-icon */}
     
-<div className=' absolute sm:top-[-186px]  lg:top-[-285px]  right-[16px]'>
+    {!hideicons &&
+<div className=' card-icon  z-0 absolute sm:top-[-186px]  lg:top-[-285px]  right-[16px]'>
     <img
     onClick={() => {handleLike(product.id)}}
-    className=' w-6 h-6'
+    className=' w-6 h-6  z-0'
     src={` ${isLiked  ? 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-heart-256.png' : 'https://cdn0.iconfinder.com/data/icons/business-office-1-7/55/35-256.png'} `} alt="" />
 </div>
-
+}
 </div>
 </div>
 

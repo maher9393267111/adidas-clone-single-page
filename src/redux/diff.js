@@ -14,6 +14,7 @@ id:'',
 cart:[],
 liked:[],
 islikde:false,
+hideicons:false,
 
 
 
@@ -43,25 +44,13 @@ console.log('add item-->',state.liked);
 
 
 
-
-    // state.likded = [...state.likded, action.payload];
-    // console.log(state.likded);
-    // console.log('likded',state.likded);
-
-    // // if  action.payload.id in state.likded remove it
-    // // else add it
-
-
-
-    // const filterliked = state.likded.filter(
-    //   (item) => item.id !== action.payload
-    // );
-
-    // state.likded = filterliked;
-
         
     
     },
+
+    hide_icons: (state, action) => {
+      state.hideicons = action.payload;
+    }
 
   
 },
@@ -73,7 +62,8 @@ console.log('add item-->',state.liked);
 // Action creators are generated for each case reducer function
 export const {
 
-  liked_products
+  liked_products,
+  hide_icons
   
 
  

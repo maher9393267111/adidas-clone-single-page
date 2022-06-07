@@ -44,3 +44,10 @@ code {
     top: -14px;
     left: 28px;
 }
+
+
+
+
+.hover-list:hover~.card-icon{
+  display: none;
+}

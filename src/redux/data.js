@@ -463,6 +463,117 @@ images:[
 },
 
 
+
+//------6--------
+
+
+{
+
+  id:6,
+  name:"Tenssaur ayakkabi",
+  colors:["red","blue","green"],
+  price:1000,
+  category:'cocuklar kosu',
+  
+  images:[
+
+    "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/98b09a363d2c43d9b0afac0200fe2d65_9366/tensaur-ayakkab%C4%B1.jpg",
+    "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/98b09a363d2c43d9b0afac0200fe2d65_9366/tensaur-ayakkab%C4%B1.jpg",
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+  ]
+},
+
+
+
+
+//-7-----
+
+{
+  id:7,
+  name:"Tenssaur ayakkabi",
+  colors:["red","blue","green"],
+  price:1000,
+  category:'cocuklar kosu',
+  
+  images:[
+"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d28475db2e884143a97eac3c005ffb62_9366/galaxy-5-ayakkab%C4%B1.jpg",
+"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/a49cc070aa814e7b99d0ac3c005ff3c4_9366/galaxy-5-ayakkab%C4%B1.jpg",
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+  ]
+},
+
+
+// -8-
+
+
+
+
+{
+  id:8,
+  name:"Tenssaur ayakkabi",
+  colors:["red","blue","green"],
+  price:1000,
+  category:'cocuklar kosu',
+  
+  images:[
+"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/d28475db2e884143a97eac3c005ffb62_9366/galaxy-5-ayakkab%C4%B1.jpg",
+"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/a49cc070aa814e7b99d0ac3c005ff3c4_9366/galaxy-5-ayakkab%C4%B1.jpg",
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+  ]
+},
+
+
+//-9---
+
+
+{
+  id:9,
+  name:"Tenssaur ayakkabi",
+  colors:["red","blue","green"],
+  price:1000,
+  category:'cocuklar kosu',
+  
+  images:[
+"  https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/760b00d94c334c55976fad670106246d_9366/messi-runfalcon-2.0-ayakkab%C4%B1.jpg",
+"https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/760b00d94c334c55976fad670106246d_9366/messi-runfalcon-2.0-ayakkab%C4%B1.jpg",
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+  ]
+},
+
+
+
+
+
+
+
+
+
+
 ]
    
     
