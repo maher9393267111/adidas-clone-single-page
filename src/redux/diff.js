@@ -17,6 +17,8 @@ islikde:false,
 hideicons:false,
 allproducts:[],
 searchingproducts:[],
+searchword:'',
+clickoutside:false,
 
 
 
@@ -63,9 +65,24 @@ console.log('add item-->',state.liked);
     },
 
     search_products: (state, action) => {
+      state.searchword = action.payload;
 // search products by regex
-      const regex = new RegExp(action.payload, "gi");
-      state.searchingproducts = state.allproducts.filter(item => item.name.match(regex));
+      const regex = new RegExp(state.searchword, "gi");
+
+
+if(state.searchword.length  ===  0)
+
+{
+  console.log('search input is null now-->');
+    state.searchingproducts = []
+ 
+}
+
+else{
+  console.log('else search input is not null now-->',state.searchword.length);
+  state.searchingproducts = state.allproducts.filter(item => item.name.match(regex));
+}
+      
 
 
     },

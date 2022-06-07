@@ -29,14 +29,14 @@ useEffect(() => {
 
 return (
 
-    <div>
+    <div className=' flex gap-4 font-bold'>
 
        <div>
            
            <img  className=' w-8 h-8' src={item.images[0]} alt="" />
            
            </div> 
-           <div>
+           <div className='   self-center'>
                <p>{item.name}</p>
            </div>
 
