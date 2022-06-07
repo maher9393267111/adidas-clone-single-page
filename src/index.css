@@ -30,3 +30,17 @@ code {
 
 }
 
+
+
+  i {
+    background-color: #2470b4;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 3px;
+    width: 22px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: -14px;
+    left: 28px;
+}

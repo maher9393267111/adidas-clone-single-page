@@ -381,6 +381,88 @@ images:[
 },
 
 
+// ------3--------
+
+
+
+{
+  id:3,
+  name:"Tenssaur ayakkabi",
+  colors:["red","blue","green"],
+  price:1000,
+  category:'cocuklar kosu',
+  
+  images:[
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/05f28defccfd4d02a9adac0c00ced991_9366/runfalcon-2.0-ayakkab%C4%B1.jpg'   ,
+
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4906070f8cb74d23a8faac0c00cea823_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+  ]
+},
+
+
+
+
+// --------4--------
+
+
+{
+  id:4,
+  name:"Tenssaur ayakkabi",
+  colors:["red","blue","green"],
+  price:1000,
+  category:'cocuklar kosu',
+  
+  images:[
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/05f28defccfd4d02a9adac0c00ced991_9366/runfalcon-2.0-ayakkab%C4%B1.jpg'   ,
+
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4906070f8cb74d23a8faac0c00cea823_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+  ]
+},
+
+
+
+// --------5--------
+
+
+{
+  id:5,
+  name:"Tenssaur ayakkabi",
+  colors:["red","blue","green"],
+  price:1000,
+  category:'cocuklar kosu',
+  
+  images:[
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/05f28defccfd4d02a9adac0c00ced991_9366/runfalcon-2.0-ayakkab%C4%B1.jpg'   ,
+
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4906070f8cb74d23a8faac0c00cea823_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+  ]
+},
+
+
 ]
    
     

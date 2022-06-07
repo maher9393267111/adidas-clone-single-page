@@ -1,6 +1,9 @@
 import React from "react";
 import { categories, categories2 } from "../redux/data";
+import { useSelector } from "react-redux";
 const Navbar = () => {
+
+  const {liked,cart} = useSelector(state => state.global);
   return (
     <div>
       <div className=" h-[80px]    shadow-2xl">
@@ -202,15 +205,26 @@ const Navbar = () => {
                         src="https://cdn1.iconfinder.com/data/icons/shopping-346/24/buy-bag-cart-shop-shopping-256.png"
                         alt=""
                       />
+
+<div>
+                        <p className={``}> <i className={` ${cart?.length > 0 ? 'block' : 'hidden'}`}>{cart?.length}  </i></p>
+                      </div>
+
+
+
                     </p>
                   </div>
                   <div>
-                    <p>
+                    <p className=" relative">
                       <img
                         className="w-8 h-8"
                         src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-128.png"
                         alt=""
                       />
+
+                      <div>
+                        <p className={``}> <i className={` ${liked.length > 0 ? 'block' : 'hidden'}`}>{liked.length}  </i></p>
+                      </div>
                     </p>
                   </div>
                 </div>

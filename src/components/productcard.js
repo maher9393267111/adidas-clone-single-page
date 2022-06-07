@@ -7,15 +7,35 @@ const Productcard = ({product}) => {
     const dispatch = useDispatch();
     const  {liked} = useSelector(state => state.global);
 
+    const [isLiked, setIsLiked] = useState(false);
+
+
+    // check if it is already liked or not 
+
+    const handleLike = (productid) => {
+        console.log('productid',productid);
+
+        dispatch(liked_products(productid));
+
+if (liked.includes(productid)) {
+    setIsLiked(false);
+} else {
+    setIsLiked(true);
+}
+    }
+
+
 const [currentimage,setCurrentimage] = useState(0);
 const [currentindex,setCurrentindex] = useState(0);
 
     return (
         <div className=' card card-wrapper sm:h-[300px] lg:h-auto    '>
-        
+
+{/* {isLiked ? 'like' : 'not like'} */}
+
+
 <div className=' h-full'>
  
-<p>{liked?.length}</p>
 {/* -image- */}
 
 
@@ -39,9 +59,9 @@ src={product.images[currentindex]} alt="" />
     
 <div className=' absolute sm:top-[-186px]  lg:top-[-285px]  right-[16px]'>
     <img
-    onClick={() => {dispatch(liked_products(product.id));}}
+    onClick={() => {handleLike(product.id)}}
     className=' w-6 h-6'
-    src="https://cdn0.iconfinder.com/data/icons/business-office-1-7/55/35-256.png" alt="" />
+    src={` ${isLiked  ? 'https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-heart-256.png' : 'https://cdn0.iconfinder.com/data/icons/business-office-1-7/55/35-256.png'} `} alt="" />
 </div>
 
 </div>

@@ -13,6 +13,7 @@ arr:[],
 id:'',
 cart:[],
 liked:[],
+islikde:false,
 
 
 
@@ -37,6 +38,7 @@ console.log('remove item-->',state.liked);
 if (!is_already_liked) {
 state.liked.push(action.payload);
 console.log('add item-->',state.liked);
+
 }
 
 
