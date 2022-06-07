@@ -1,7 +1,7 @@
 import React from 'react';
 import { products } from '../redux/data';
 import { useEffect,useState } from 'react';
-import { fetch_all_products } from '../redux/diff';
+import { fetch_all_products, clear_search_products } from '../redux/diff';
 import { useDispatch,useSelector } from 'react-redux';
 const Serch = () => {
 
@@ -12,6 +12,13 @@ useEffect(() => {
 
     dispatch(fetch_all_products(products));
     console.log('products-->',allproducts);
+
+
+    // if  all products.length ===  searching saerchingproduct.length  === 0
+
+    if (allproducts.length ===  searchingproducts?.length  ) {
+        dispatch(clear_search_products());
+    }
 
 
 }, [])

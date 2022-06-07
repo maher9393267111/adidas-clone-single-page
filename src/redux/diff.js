@@ -68,7 +68,21 @@ console.log('add item-->',state.liked);
       state.searchingproducts = state.allproducts.filter(item => item.name.match(regex));
 
 
+    },
+
+// clear search products
+
+
+    clear_search_products: (state, action) => {
+
+      state.searchingproducts = [];
+
     }
+
+
+    
+
+
 
   
 },
@@ -83,7 +97,8 @@ export const {
   liked_products,
   hide_icons,
   fetch_all_products,
-  search_products
+  search_products,
+  clear_search_products
   
 
  
