@@ -3,6 +3,7 @@ import { categories, categories2 } from "../redux/data";
 import { useSelector,useDispatch } from "react-redux";
 import { hide_icons,search_products } from "../redux/diff";
 import { useState ,  useEffect} from "react";
+import LIkedProducts from "../components/likedproducts";
 import Search from '../components/serch'
 const Navbar = () => {
 
@@ -266,8 +267,14 @@ const handlefixed = () => {
                       />
                     </p>
                   </div>
-                  <div>
-                    <p>
+
+
+                  {/* liked- */}
+                  <div
+                  className=""
+                  
+                  >
+                    <p className=" "> 
                       <img
                         className="w-8 h-8"
                         src="https://cdn1.iconfinder.com/data/icons/shopping-346/24/buy-bag-cart-shop-shopping-256.png"
@@ -280,10 +287,16 @@ const handlefixed = () => {
 
 
 
+
                     </p>
+
+
+
+
+
                   </div>
                   <div>
-                    <p className=" relative">
+                    <p className=" relative  group">
                       <img
                         className="w-8 h-8"
                         src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-128.png"
@@ -291,7 +304,28 @@ const handlefixed = () => {
                       />
 
                       <div>
-                        <p className={``}> <i className={` ${liked.length > 0 ? 'block' : 'hidden'}`}>{liked.length}  </i></p>
+                        <p className={``}> <i className={` ${liked.length > 0 ? 'block' : 'hidden'}`}>{liked.length}  </i>
+                        
+                        
+                        
+                        {/* ----show liked products- */}
+
+<div className="  absolute    z-[44]  bg-white   group-hover:block  hidden   shadow-xl  min-h-[150px] min-w-[150px]  z-index  top-[30px] left-[-77px]  ">
+
+<div className="  z-[444]      ">
+
+
+<LIkedProducts/>
+
+
+</div>
+
+</div>
+                        
+                        
+                        
+                        
+                        </p>
                       </div>
                     </p>
                   </div>
