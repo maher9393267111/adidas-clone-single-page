@@ -8,6 +8,8 @@ const Navbar = () => {
 
 
   const [fix,setfix] = useState(false);
+
+  const {searchword} = useSelector(state=>state.global);
 // if winddow top is modr than 100px  remove fixed
 
 const handlefixed = () => {
@@ -234,7 +236,7 @@ const handlefixed = () => {
                 </div>
                 
 {/* -----absolute-start----- */}
-<div className=" absolute  top-[50px]   shadow-xl  min-h-[150px]  left-[75px]  z-10 min-w-[200px] bg-white">
+  {searchword.length > 0  &&  <div className=" absolute  top-[50px]   shadow-xl  min-h-[150px]  left-[75px]  z-10 min-w-[200px] bg-white">
 
   
 <div>
@@ -244,6 +246,7 @@ const handlefixed = () => {
 
 
 </div>
+}
 
 
               </div>
