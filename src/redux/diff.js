@@ -15,6 +15,8 @@ cart:[],
 liked:[],
 islikde:false,
 hideicons:false,
+allproducts:[],
+searchingproducts:[],
 
 
 
@@ -51,6 +53,22 @@ console.log('add item-->',state.liked);
     hide_icons: (state, action) => {
       state.hideicons = action.payload;
     }
+    ,
+
+
+    fetch_all_products: (state, action) => {
+      console.log('action.payload-->',action.payload);
+      state.allproducts = action.payload;
+      console.log('all products in redux page-->',action.payload);
+    },
+
+    search_products: (state, action) => {
+// search products by regex
+      const regex = new RegExp(action.payload, "gi");
+      state.searchingproducts = state.allproducts.filter(item => item.name.match(regex));
+
+
+    }
 
   
 },
@@ -63,7 +81,9 @@ console.log('add item-->',state.liked);
 export const {
 
   liked_products,
-  hide_icons
+  hide_icons,
+  fetch_all_products,
+  search_products
   
 
  

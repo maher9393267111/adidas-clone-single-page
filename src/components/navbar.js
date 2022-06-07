@@ -1,8 +1,9 @@
 import React from "react";
 import { categories, categories2 } from "../redux/data";
 import { useSelector,useDispatch } from "react-redux";
-import { hide_icons } from "../redux/diff";
+import { hide_icons,search_products } from "../redux/diff";
 import { useState ,  useEffect} from "react";
+import Search from '../components/serch'
 const Navbar = () => {
 
 
@@ -222,6 +223,8 @@ const handlefixed = () => {
                     </button>
                   </span>
                   <input
+
+                  onChange = {(e) => {dispatch(search_products(e.target.value))}}
                     type="search"
                     name="q"
                     className="py-2 text-sm text-black    hover:outline-1  hover:outline-black bg-[#e9ecef] rounded-md pl-10 focus:outline-black  "
@@ -229,6 +232,20 @@ const handlefixed = () => {
                     autocomplete="off"
                   />
                 </div>
+                
+{/* -----absolute-start----- */}
+<div className=" absolute  top-[50px]   shadow-xl  min-h-[150px]  left-[75px]  z-10 min-w-[200px] bg-white">
+
+  
+<div>
+
+  <Search/>
+</div>
+
+
+</div>
+
+
               </div>
 
               {/* --icons- */}

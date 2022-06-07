@@ -1,0 +1,19 @@
+  .parent  .imgh:hover + .parent >.effect{
+  
+    background-color: aquamarine;
+  }
+  
+  
+  /* .effect{
+  
+    background-color: green;
+    font-weight: bold;
+  } */
+
+
+
+  .parent:hover > .effect > h1 {
+    transform: translateY(-33px);
+
+ transition:  all 0.5s ease-in-out;
+  }
