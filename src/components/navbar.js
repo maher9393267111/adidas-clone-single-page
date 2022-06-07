@@ -91,14 +91,14 @@ const Navbar = () => {
                                               </div>
 
                                               <div>
-
-<div  className="w-[170px]   h-[82px]">
-    <img  className=" w-full  h-full" src={sub.image1} alt="" />
-</div>
-
-
-
-</div>
+                                                <div className="w-[170px]   h-[82px]">
+                                                  <img
+                                                    className=" w-full  h-full"
+                                                    src={sub.image1}
+                                                    alt=""
+                                                  />
+                                                </div>
+                                              </div>
                                             </div>
                                           ) : (
                                             <div>
@@ -118,22 +118,13 @@ const Navbar = () => {
                                             </div>
                                           )}
 
-<ul className=" text-center">
-
-{sub.list.map((item) => (<li>
-
-
-<p>
-{item}
-</p>
-
-
-</li>))}
-
-</ul>
-
-
-
+                                          <ul className=" text-center">
+                                            {sub.list.map((item) => (
+                                              <li>
+                                                <p>{item}</p>
+                                              </li>
+                                            ))}
+                                          </ul>
                                         </p>
                                       </li>
                                     </div>
@@ -153,7 +144,79 @@ const Navbar = () => {
 
           {/* ---right---- */}
 
-          <div className="  col-span-4">3</div>
+          <div className="  ml-4  col-span-4">
+            {/* -content-- */}
+
+            <div className=" middle-make  transform translate-y-[25px]    flex   gap-6">
+              {/* -search input- */}
+
+              <div>
+                <div className="relative text-gray-600 focus-within:text-gray-400">
+                  <span className="absolute inset-y-0 left-[153px] flex items-center pl-2">
+                    <button
+                      type="submit"
+                      classname="p-1 focus:outline-none   left-[66px] focus:shadow-outline"
+                    >
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        class="w-6 h-6"
+                      >
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                      </svg>
+                    </button>
+                  </span>
+                  <input
+                    type="search"
+                    name="q"
+                    className="py-2 text-sm text-black    hover:outline-1  hover:outline-black bg-[#e9ecef] rounded-md pl-10 focus:outline-black  "
+                    placeholder="Search..."
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              {/* --icons- */}
+
+              <div>
+                <div className=" flex gap-8  mt-[2px]">
+                  {/* usericon */}
+
+                  <div>
+                    <p>
+                      <img
+                        className="w-8 h-8"
+                        src="https://cdn2.iconfinder.com/data/icons/business-filled-outline-style-1-set-1/256/6-256.png"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <img
+                        className="w-8 h-8"
+                        src="https://cdn1.iconfinder.com/data/icons/shopping-346/24/buy-bag-cart-shop-shopping-256.png"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <img
+                        className="w-8 h-8"
+                        src="https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/Heart-Love-Like-128.png"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

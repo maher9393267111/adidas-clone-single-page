@@ -325,3 +325,65 @@ export const categories2 = [
     ],
   },
 ];
+
+
+
+
+
+
+ export const products =[
+
+
+{
+
+id:1,
+name:"Tenssaur ayakkabi",
+colors:["red","blue","green"],
+price:7000,
+category:'cocuklar kosu',
+
+images:[
+
+    'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/0f76d6ac0cf9424eb6bbac1300fe09b4_9366/tensaur-ayakkab%C4%B1.jpg',
+    'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/676d47a5bc9448abb658ac1300db3280_9366/tensaur-ayakkab%C4%B1.jpg',
+    'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/d76b7473bcfe4ce29b59ad740140d284_9366/tensaur-ayakkab%C4%B1.jpg',
+    'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/8826d7cf8d0943b495c1ad7200ed9797_9366/tensaur-ayakkab%C4%B1.jpg',
+    'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/f2c4baa9133a4eae8a45ac1300d61337_9366/tensaur-ayakkab%C4%B1.jpg',
+
+
+]
+
+
+
+},
+
+
+{
+    id:2,
+    name:"Tenssaur ayakkabi",
+    colors:["red","blue","green"],
+    price:1000,
+    category:'cocuklar kosu',
+    
+    images:[
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/05f28defccfd4d02a9adac0c00ced991_9366/runfalcon-2.0-ayakkab%C4%B1.jpg'   ,
+
+'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4906070f8cb74d23a8faac0c00cea823_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac01e49ad217430f8a1ead6a011d9803_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+'https://assets.adidas.com/images/w_85,h_85,f_auto,q_auto,fl_lossy,c_fill,g_auto/ab1d4d0f0d414ae0b7ffad6a011d9eb6_9366/runfalcon-2.0-ayakkab%C4%B1.jpg',
+
+
+
+
+    ]
+},
+
+
+]
+   
+    
+
+
+

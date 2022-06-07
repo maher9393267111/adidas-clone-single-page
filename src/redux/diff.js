@@ -12,6 +12,7 @@ obj:{},
 arr:[],
 id:'',
 cart:[],
+liked:[],
 
 
 
@@ -20,9 +21,42 @@ cart:[],
   },
 
   reducers: {
-    open_modal: (state, action) => {
+  liked_products: (state, action) => {
  
-        state.togglemodal = true;
+// check if the product is already in the liked products
+
+const is_already_liked = state.liked.find(item => item === action.payload);
+
+if (is_already_liked) {
+
+  state.liked = state.liked.filter(item => item !== action.payload);
+console.log('remove item-->',state.liked);
+// return { ...state, liked: state.liked };
+}
+
+if (!is_already_liked) {
+state.liked.push(action.payload);
+console.log('add item-->',state.liked);
+}
+
+
+
+
+    // state.likded = [...state.likded, action.payload];
+    // console.log(state.likded);
+    // console.log('likded',state.likded);
+
+    // // if  action.payload.id in state.likded remove it
+    // // else add it
+
+
+
+    // const filterliked = state.likded.filter(
+    //   (item) => item.id !== action.payload
+    // );
+
+    // state.likded = filterliked;
+
         
     
     },
@@ -37,7 +71,7 @@ cart:[],
 // Action creators are generated for each case reducer function
 export const {
 
-    open_modal,
+  liked_products
   
 
  
